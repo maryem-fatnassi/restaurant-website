@@ -1,0 +1,67 @@
+main .menu-section {
+    margin-top: 150px;
+}
+main .cards-container {
+    display: flex;
+    justify-content: center;
+    margin: 100px 50px 0 50px !important;
+}
+main .menu-section .section-title {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+main .menu-section .menu-card {
+    border: 3px solid black;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    margin: 50px 30px;
+    position: relative;
+}
+main .menu-section .image {
+    display: flex;
+    justify-content: center;
+    transform: translateY(-70px);
+    z-index: 1;
+}
+main .menu-section .image img {
+    width: 180px;
+    height: 130px;
+}
+main .menu-section .menu-card .rate i:not(:last-child) {
+    color: gold
+}
+main  .menu-card .info {
+    transform: translateY(-38px);
+}
+main  .menu-card .rate {
+    transform: translateY(-20px);
+}
+main .menu-card .info h3 {
+    font-size: 27px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+main  .menu-card .heart-icon, .thumbs-down{
+    position: absolute;
+    top: 5px;
+    font-size: 28px;
+    z-index: 9;
+    cursor: pointer;
+}
+main .menu-card .heart-icon {
+    right: 20px;
+}
+main .menu-card .thumbs-down {
+    left: 20px;
+}
+main .menu-card .thumbs-down .sad-icon, .heart-icon .smile-icon {
+    display: none;
+}
+main .menu-card .heart-icon .smile-icon.show {
+    display: block;
+}
+main .menu-card .thumbs-down .sad-icon.display {
+    display: block;
+}

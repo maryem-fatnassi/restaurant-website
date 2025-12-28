@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSSFiles/preloader.css">
+    <link rel="stylesheet" href="./CSSFiles/navbar.css">
+    <link rel="stylesheet" href="./CSSFiles/home.css">
+    <link rel="stylesheet" href="./CSSFiles/features.css">
+    <link rel="stylesheet" href="./CSSFiles/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- <link rel="stylesheet" href="./CSSFiles/footer.css"> -->
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="bg-dark">
+    <div class="loader">
+      <i class="fa-solid fa-burger"></i>
+      <i class="fa-solid fa-utensils"></i>
+      <i class="fa-solid fa-pizza-slice"></i>
+    </div>
+  </div>
+  <!-- Main Content-->
+  <div id="main-content" style="display:none;">
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+     <div class="container">
+       <!-- Logo / Brand -->
+       <a class="navbar-brand fw-bold" href="#">
+         🍽️ <span style="color:#fcc107 ;">MARY</span>staurant
+       </a>
+       <!-- Button for mobile -->
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <!-- Links -->
+       <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item nav-links">
+             <a class="link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="link" href="#menu">Menu</a>
+           </li>
+           <li class="nav-item">
+             <a class="link" href="#orders">Orders</a>
+           </li>
+           <li class="nav-item">
+             <a class=" link" href="#about">About</a>
+           </li>
+           <li class="nav-item">
+             <a class="link" href="#contact">Contact</a>
+           </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Section -->
+    <main>
+       <!-- Home Section -->
+       <section class="home-section" id="home-part">
+         <img class="img-fluid" src="/Images/pexels-ella-olsson-572949-1640773.jpg" alt="bg-img">
+         <div class="col-12 home-content">
+           <h1 class="home-content-item">Welcome To Our Restaurant</h1>
+           <p class="home-content-item">We bring you carefully prepared dishes made from fresh ingredients, crafted to create unforgettable flavors and warm moments.</p>
+           <li class="nav-item ms-lg-3 home-content-item">
+             <a class="btn btn-warning fw-semibold" href="#orders">Order Now</a>
+           </li>
+         </div>
+       </section>
+       <!-- Our Features -->
+        <section class="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 features-card-right col-lg-3 col-md-6">
+                <i class="fa-solid fa-user-tie"></i>
+                <h4>Master Chefs</h4>
+                <p>We have highly skilled chefs</p>
+              </div>
+              <div class="col-12 features-card-right col-lg-3 col-md-6">
+                <i class="fa-solid fa-utensils"></i>
+                <h4>Quality Food</h4>
+                <p>Our food is of the highest quality</p>
+              </div>
+              <div class="col-12 features-card-left col-lg-3 col-md-6">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h4>Online Order</h4>
+                <p>Order online and enjoy faster delivery</p>
+              </div>
+              <div class="col-12 features-card-left col-lg-3 col-md-6">
+                <i class="fa-solid fa-headphones"></i>
+                <h4>10/24 Service</h4>
+                <p>We are open and ready to serve you for 10 hours daily</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Menu Section -->
+        <section class="menu-section">
+          <div class="container-fluid">
+            <div class="row text-center">
+              <div class="col-12">
+                <h1 class="section-title">Our <span style="color: #fcc107;">Menu</span></h1>
+                <p style="font-weight:bold;">Discover our carefully crafted menu, made with fresh ingredients and authentic flavors</p>
+              </div>
+            </div>
+            <div class="row cards-container">
+              <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
+                <div class="thumbs-down">
+                  <i class="bi bi-hand-thumbs-down-fill dislike"></i>
+                  <i class="bi bi-emoji-frown-fill sad-icon"></i>
+                </div>
+                <div class="heart-icon">
+                  <i class="fa-solid fa-heart like"></i>
+                  <i class="bi bi-emoji-smile-fill smile-icon"></i>
+                </div>
+                <div class="image">
+                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
+                </div>
+                <div class="info">
+                  <h3>Fish-Dish</h3>
+                  <h4>5.5$</h4>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <!-- <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
+                <div class="image">
+                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
+                </div>
+                <div class="info">
+                  <h3>Fish-Dish</h3>
+                  <h4>5.5$</h4>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
+                <div class="image">
+                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
+                </div>
+                <div class="info">
+                  <h3>Fish-Dish</h3>
+                  <h4>5.5$</h4>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
+                <div class="image">
+                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
+                </div>
+                <div class="info">
+                  <h3>Fish-Dish</h3>
+                  <h4>5.5$</h4>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+ -->
+
+
+
+            </div>
+          </div>
+        </section>
+    </main>
+  </div>
+
+
+
+
+
+  <!-- Footer Section -->
+   <!-- <footer class="bg-dark text-light pt-5 pb-3 mt-5" style="margin-top: 100px;">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <h5 class="fw-bold mb-3">🍽️ Restaurant</h5>
+        <p class="text-secondary">
+          We offer the most delicious dishes made with the finest ingredients and a professional touch.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-md-6 mb-4 contact-item">
+        <h6 class="fw-semibold mb-3 footer-titles">Quick Links</h6>
+        <ul class="list-unstyled">
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#menu" class="footer-link">Menu</a></li>
+          <li><a href="#orders" class="footer-link">Orders</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 contact-item">
+        <h6 class="fw-semibold mb-3 footer-titles">Contact</h6>
+        <p class="mb-1 text-secondary"><i class="fa-solid fa-location-dot"></i> Tunis, Tunisia</p>
+        <p class="mb-1 text-secondary"><i class="fa-solid fa-phone"></i> +216 00 000 000</p>
+        <p class="mb-1 text-secondary"><i class="fa-solid fa-envelope"></i> info@restaurant.com</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-4 contact-item">
+        <h6 class="fw-semibold mb-3 footer-titles">Opening Hours</h6>
+        <p class="mb-1 text-secondary opening-hours">Mon - Fri: 09:00am - 19:00pm</p>
+        <p class="mb-1 text-secondary opening-hours">Sat - Sun: 10:00am - 20:00pm</p>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+    <div class="text-center">
+      <p class="mb-0 text-secondary">
+        © 2025 Restaurant. All Rights Reserved.
+      </p>
+    </div>
+
+  </div>
+</footer> -->
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ <script src="./JSFiles/menu.js"></script>
+ <script src="./JSFiles/preloader.js" defer></script>
+ <script src="./JSFiles/features.js" defer></script>
+</body>
+</html>

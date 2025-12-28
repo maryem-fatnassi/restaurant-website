@@ -1,0 +1,12 @@
+main .features {
+    margin-top: 100px;
+}
+main .features .features-card-left, .features-card-right {
+    margin-bottom: 15px;
+    text-align: center;
+}
+main .features i{
+    font-size: 40px;
+    color: orange;
+    margin-bottom: 15px;
+}

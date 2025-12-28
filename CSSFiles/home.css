@@ -1,0 +1,23 @@
+main .home-section {
+    position: relative;
+}
+main .home-section img{
+    height: 700px;
+    width: 100%;
+    filter: brightness(0.4);
+}
+main .home-section .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+main .home-section .home-content h1 {
+    font-size: 3.8rem;
+    margin-bottom: 35px;
+}
+main .home-section .home-content p {
+    margin-bottom: 30px;
+}
