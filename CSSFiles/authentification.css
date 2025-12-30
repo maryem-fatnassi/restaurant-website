@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../Images/pexels-ella-olsson-572949-1640773.jpg);
+  background-repeat: no-repeat;
+  filter: brightness(0.4);
+  z-index: -1;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo_container img{
+    height:60px;
+    margin-left: 2rem;
+}
+header .login-signUp_buttons, .logo_container img{
+    margin-top: 2rem;
+}
+header .login-signUp_buttons button{
+    font-size: 20px;
+    margin-right: 1rem;
+    font-weight: bold;
+    background-color: #ffc107;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.707);
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+header .login-signUp_buttons button:hover{
+    color: #fff;
+    background-color:#ffc107bb;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 400px;
+    margin: auto;
+    position: relative;
+    flex: 1;
+}
+main h1{
+    font-size: 50px;
+    letter-spacing: 4px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffc107f0;
+}
+main section{
+    width: 100%;
+    position: absolute;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+main form input{
+    padding: 0.9rem 1rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px ;
+    box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.778);
+    width: 100%;
+    outline: none;
+}
+main button{
+    margin: auto;
+    padding: 0.5rem 4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107c4;
+    font-size: 19px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.496);
+}
+main button:hover{
+    background-color: #ffc10799;
+}
+main section a{
+    display: block;
+    color:#fff;
+    margin-top: 20px;
+}
+main section a:hover{
+    color: orange;
+}
+.login-section{
+    display: block;
+}
+.signUp-section{
+    display: none;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+@media(max-width:552px){
+    header{
+        flex-direction: column;
+        position: relative;
+    }
+    header .logo_container img{
+        margin: 0;
+        transform: translateX(-50px);
+    }
+
+}

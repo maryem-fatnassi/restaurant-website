@@ -1,0 +1,30 @@
+.chefs-section{
+  margin-top: 100px;
+  position: relative;
+  max-width: 100%;
+}
+.chef-card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.chef-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+}
+
+.chef-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+/* .chefs-section .salad-img {
+  position: absolute;
+  right:50px;
+  top: 0;
+} */
+.chefs-section .salad-img  img {
+  position: absolute;
+  right:-60px;
+  top: -10px;
+  width: 150px;
+}

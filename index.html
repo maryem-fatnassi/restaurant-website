@@ -13,8 +13,13 @@
     <link rel="stylesheet" href="./CSSFiles/home.css">
     <link rel="stylesheet" href="./CSSFiles/features.css">
     <link rel="stylesheet" href="./CSSFiles/menu.css">
+    <link rel="stylesheet" href="./CSSFiles/chefSection.css">
+    <link rel="stylesheet" href="./CSSFiles/review.css">
+    <link rel="stylesheet" href="./CSSFiles/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- <link rel="stylesheet" href="./CSSFiles/footer.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./CSSFiles/chart.css">
+    <link rel="stylesheet" href="./CSSFiles/footer.css">
 </head>
 <body>
   <!-- Preloader -->
@@ -48,13 +53,16 @@
              <a class="link" href="#menu">Menu</a>
            </li>
            <li class="nav-item">
-             <a class="link" href="#orders">Orders</a>
+             <a class="link" href="./HTMLFiles/authentification.html">Orders</a>
            </li>
            <li class="nav-item">
              <a class=" link" href="#about">About</a>
            </li>
            <li class="nav-item">
              <a class="link" href="#contact">Contact</a>
+           </li>
+           <li class="nav-item">
+             <a class="link" href="./HTMLFiles/authentification.html"><i class="fa-solid fa-user"></i></a>
            </li>
           </ul>
         </div>
@@ -109,100 +117,207 @@
                 <p style="font-weight:bold;">Discover our carefully crafted menu, made with fresh ingredients and authentic flavors</p>
               </div>
             </div>
-            <div class="row cards-container">
-              <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
-                <div class="thumbs-down">
-                  <i class="bi bi-hand-thumbs-down-fill dislike"></i>
-                  <i class="bi bi-emoji-frown-fill sad-icon"></i>
-                </div>
-                <div class="heart-icon">
-                  <i class="fa-solid fa-heart like"></i>
-                  <i class="bi bi-emoji-smile-fill smile-icon"></i>
-                </div>
-                <div class="image">
-                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
-                </div>
-                <div class="info">
-                  <h3>Fish-Dish</h3>
-                  <h4>5.5$</h4>
-                </div>
-                <div class="rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-
-              <!-- <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
-                <div class="image">
-                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
-                </div>
-                <div class="info">
-                  <h3>Fish-Dish</h3>
-                  <h4>5.5$</h4>
-                </div>
-                <div class="rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
-                <div class="image">
-                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
-                </div>
-                <div class="info">
-                  <h3>Fish-Dish</h3>
-                  <h4>5.5$</h4>
-                </div>
-                <div class="rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-12 col-md-4 col-xl-3 menu-card">
-                <div class="image">
-                  <img src="./Images/restaurant-fish-dish.png" alt="fish-dish">
-                </div>
-                <div class="info">
-                  <h3>Fish-Dish</h3>
-                  <h4>5.5$</h4>
-                </div>
-                <div class="rate">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star"></i>
-                </div>
-              </div>
- -->
-
-
+            <div class="row cards-container" id="row-cards">
 
             </div>
           </div>
         </section>
+        <!-- Our Chefs Section -->
+         <section class="py-5 bg-light chefs-section" id="chefs">
+  <div class="container">
+
+    <!-- Section Title -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold section-title">Our <span  style="color: #fcc107;">Chefs</span></h2>
+      <p class="text-muted">
+        Meet the talented chefs behind our delicious dishes
+      </p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Chef 1 -->
+      <div class="col-lg-4 col-md-6 ">
+        <div class="card chef-card border-0 shadow-sm h-100 text-center">
+          <img src="./Images/chef1.jpg" class="card-img-top" alt="Chef">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Chef Ahmed</h5>
+            <p class="text-warning mb-1">Head Chef</p>
+            <p class="card-text text-muted">
+              Specialized in international cuisine with over 10 years of experience.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 2 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card chef-card border-0 shadow-sm h-100 text-center">
+          <img src="./Images/chef2.jpg" class="card-img-top" alt="Chef">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Chef Lina</h5>
+            <p class="text-warning mb-1">Pastry Chef</p>
+            <p class="card-text text-muted">
+              Expert in desserts and modern pastry creations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chef 3 -->
+      <div class="col-lg-4 col-md-6">
+        <div class="card chef-card border-0 shadow-sm h-100 text-center">
+          <img src="./Images/chef3.png" class="card-img-top" alt="Chef">
+          <div class="card-body">
+            <h5 class="card-title fw-semibold">Chef Omar</h5>
+            <p class="text-warning mb-1">Sous Chef</p>
+            <p class="card-text text-muted">
+              Passionate about fresh ingredients and creative flavors.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Review Section -->
+ <section class="bg-light review-section" id="reviews">
+  <div class="container">
+
+    <!-- Title -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold section-title">Customer <span style="color: #fcc107;">Reviews</span></h2>
+      <p class="text-muted">
+        What our customers say about us
+      </p>
+    </div>
+
+    <!-- Swiper -->
+    <div class="swiper reviewSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Review 1 -->
+        <div class="swiper-slide">
+          <div class="review-card shadow-sm">
+            <p class="review-text">
+              “Amazing food and excellent service. Everything was fresh and delicious!”
+            </p>
+            <div class="review-user">
+              <img src="./Images/sarah.webp" alt="User">
+              <div>
+                <h6 class="mb-0">Sarah M.</h6>
+                <small class="text-warning">★★★★★</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="swiper-slide">
+          <div class="review-card shadow-sm">
+            <p class="review-text">
+              “One of the best restaurant experiences I’ve ever had. Highly recommended!”
+            </p>
+            <div class="review-user">
+              <img src="./Images/user2.avif" alt="User">
+              <div>
+                <h6 class="mb-0">Ahmed K.</h6>
+                <small class="text-warning">★★★★★</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="swiper-slide">
+          <div class="review-card shadow-sm">
+            <p class="review-text">
+              “Great atmosphere, friendly staff, and outstanding food quality.”
+            </p>
+            <div class="review-user">
+              <img src="./Images/lina.png" alt="User">
+              <div>
+                <h6 class="mb-0">Lina R.</h6>
+                <small class="text-warning">★★★★☆</small>
+              </div>
+            </div>
+          </div>
+         </div>
+
+        <!-- Review 4 -->
+        <div class="swiper-slide">
+          <div class="review-card shadow-sm">
+            <p class="review-text">
+              “Great atmosphere, friendly staff, and outstanding food quality.”
+            </p>
+            <div class="review-user">
+              <img src="./Images/john.webp" alt="User">
+              <div>
+                <h6 class="mb-0">John R.</h6>
+                <small class="text-warning">★★★★☆</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+     <!-- About Us Section -->
+       <div class="container about-section">
+         <div class="row">
+           <div class="col-12 col-sm-6 col-md-6">
+             <img class="img-fluid" src="./Images/floating_pasta2.png" alt="floating_pasta">
+           </div>
+           <div class="col-12 col-sm-6 col-md-6">
+             <h1 class="section-title">About <span style="color: #fcc107;">Us</span></h1>
+             <p>We are a passionate team of chefs and hospitality professionals who have proudly run this restaurant since its beginnings, combining years of experience with a shared love for great food, where we welcome our guests with warm service and offer carefully prepared dishes made from fresh, high-quality ingredients to create an unforgettable dining experience.</p>
+             <div class="desc-container">
+               <div class="desc">
+                 <h4>3+</h4>
+                 <h5>Years <br><span style="color: brown; font-weight: 800;"> Of Experience</span></h5>
+               </div>
+                <div class="desc" style="margin-left: 48px;">
+                  <h4>6+</h4>
+                  <h5>Best <br><span style="color: brown; font-weight: 800;">Foods</span></h5>
+                </div>
+             </div>
+             <button type="button">Learn More</button>
+          </div>
+         </div>
+       </div>
     </main>
   </div>
+  <!-- Chart -->
+   <div class="container">
+     <div class="row">
+       <div class="col">
+          <canvas id="myChart"></canvas>
+       </div>
+       <div class="col">
+          <canvas id="lineChart"></canvas>
+       </div>
+     </div>
+   </div>
 
 
 
 
 
   <!-- Footer Section -->
-   <!-- <footer class="bg-dark text-light pt-5 pb-3 mt-5" style="margin-top: 100px;">
+   <footer class="bg-dark text-light pt-5 pb-3 mt-5" style="margin-top: 100px;">
   <div class="container">
 
     <div class="row">
 
       <div class="col-lg-4 col-md-6 mb-4">
-        <h5 class="fw-bold mb-3">🍽️ Restaurant</h5>
+        <a class="navbar-brand fw-bold" href="#">
+         🍽️ <span style="color:#fcc107 ;font-size: 20px;">MARY</span>staurant
+       </a>
         <p class="text-secondary">
           We offer the most delicious dishes made with the finest ingredients and a professional touch.
         </p>
@@ -242,10 +357,15 @@
     </div>
 
   </div>
-</footer> -->
- 
+</footer>
+
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./JSFiles/chart.js"></script>
+ <script src="./JSFiles/review.js"></script>
+ <script src="./JSFiles/chefSection.js"></script>
  <script src="./JSFiles/menu.js"></script>
  <script src="./JSFiles/preloader.js" defer></script>
  <script src="./JSFiles/features.js" defer></script>

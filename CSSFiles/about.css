@@ -1,0 +1,36 @@
+main div.about-section {
+    padding-top: 90px;
+}
+main .about-section .desc-container {
+    display: flex;
+}
+main .about-section p, .desc  {
+    margin-top: 20px;
+}
+main .about-section .desc {
+    display: flex;
+    align-items: center;
+}
+main .about-section .desc h5 {
+    margin-left: 10px;
+    color: gray;
+}
+main .about-section .desc h4 {
+    color:orange;
+    font-weight: bold;
+    font-size: 32px;
+}
+main .about-section button {
+    padding: 5px 15px;
+    background-color: orange;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    margin-top: 50px;
+    box-shadow: 2px 2px 4px gray;
+}
+main .about-section button:hover {
+    background-color: rgba(255, 166, 0, 0.779);
+    color: black;
+    transition: .3s ease-in-out;
+}

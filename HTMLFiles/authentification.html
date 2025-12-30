@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentification</title>
+    <link rel="stylesheet" href="/CSSFiles/authentification.css">
+</head>
+<body>
+    <header>
+        <div class="logo_container">
+            
+        </div>
+        <div class="login-signUp_buttons">
+            <button type="submit" id="login_button">Login</button>
+            <button type="submit" id="signUp-button">Sign Up</button>
+        </div>
+    </header>
+    <main>
+        <section class="login-section" id="user-login">
+                <h1>Login</h1>
+                <form>
+                    <input type="text" placeholder="E-mail" id="email-login">
+                    <input type="text" placeholder="Password" id="password-login">
+                    <button id="submit-login">Send</button>
+                </form>
+                <a href="#">Forget Password?</a>
+        </section>
+        <section class="signUp-section" id="user-signUp">
+                <h1>Sign Up</h1>
+                <form>
+                    <input type="text" placeholder="E-mail" id="email-signUp">
+                    <input type="password" placeholder="Password" id="password-signUp">
+                    <button id="submit-signUp">Send</button>
+                </form>
+        </section>
+    </main>
+    
+    <script type="module" src="../JSFiles/login.js"></script>
+    <script type="module" src="../JSFiles/signUp.js"></script>
+    <script src="../JSFiles/authentification.js"></script>
+</body>
+</html>
