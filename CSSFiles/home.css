@@ -21,3 +21,8 @@ main .home-section .home-content h1 {
 main .home-section .home-content p {
     margin-bottom: 30px;
 }
+@media(max-width:576px) {
+    main .home-section .home-content h1 {
+        font-size: 2rem;
+    }
+}

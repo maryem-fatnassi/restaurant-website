@@ -99,7 +99,7 @@ iterationCard();
 const cardItem = document.querySelectorAll('.menu-card');
 console.log(cardItem);
 for (let index = 0; index < cardItem.length; index++) {
-    cardItem[index].setAttribute('data-aos','flip-left');
+    cardItem[index].setAttribute('data-aos','flipa-left');
 }
 
 

@@ -83,3 +83,19 @@ nav {
 .productContainer button:hover {
     background-color: #ffce39da;
 }
+/* Responsive */
+@media(max-width:762.98px) {
+    .orders-container {
+        padding:0;
+    }
+}
+@media(min-width:763px) and (max-width:991.98px) {
+    .orders-container {
+        padding: 0 100px;
+    }
+}
+@media(min-width:992px) and (max-width:1200px){
+    .orders-container {
+        padding: 0;
+    }
+}
