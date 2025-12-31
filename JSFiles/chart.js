@@ -4,18 +4,18 @@ const ctx = document.getElementById('myChart').getContext('2d');
 const myChart = new Chart(ctx, {
     type: 'bar', // نوع الرسم
     data: {
-      labels: ['يناير', 'فبراير', 'مارس', 'أبريل'],
+      labels: ['Pizza Margherita', 'Pasta Carbonara', 'Fish Dish', 'Meat Dish'],
       datasets: [{
-        label: 'المبيعات',
-        data: [12, 19, 3, 5],
-        backgroundColor: 'rgba(54, 162, 235, 0.5)',
-        borderColor: 'rgba(54, 162, 235, 1)',
+        label: 'Most Popular Dishes',
+        data: [40, 25, 20, 15],
+        backgroundColor: 'orange',
+        borderColor: 'black',
         borderWidth: 1
       }]
     },
     options: {
       responsive : true,
-    //   maintainAspectRatio: false,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true
@@ -24,21 +24,20 @@ const myChart = new Chart(ctx, {
     }
 });
 
-
  const lineChart = document.getElementById('lineChart').getContext('2d');
 
   new Chart(lineChart, {
     type: 'line',
     data: {
-      labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+      labels: ['Excellent', 'Good', 'Average', 'Bad'],
       datasets: [{
-        label: 'Sales',
-        data: [12, 19, 8, 15, 22],
+        label: 'Customer Satisfaction',
+        data: [60, 25, 10, 3],
         borderColor: 'blue',
         backgroundColor: 'rgba(0, 0, 255, 0.1)',
-        tension: 0.4,      // يجعل الخط ناعم
-        fill: true,        // تعبئة أسفل الخط
-        pointRadius: 5     // حجم النقاط
+        tension: 0.4,      
+        fill: true,        
+        pointRadius: 5    
       }]
     },
     options: {

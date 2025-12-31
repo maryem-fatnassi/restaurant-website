@@ -1,0 +1,85 @@
+nav {
+    position: relative;
+}
+.orders-container h1 {
+    font-weight: 700;
+}
+.orders-container {
+    margin-top: 140px;
+    padding: 0 150px;
+}
+.orders-container .orders-row img {
+    min-width: 100%;
+    border-radius: 5px;
+}
+.orders-container .orders-row .add-btn {
+    border: none;
+    padding: 8px 48px;
+    border-radius: 8px;
+    background-color: gold;
+    font-weight: 700;
+    box-shadow: 2px 2px 4px black;
+    transition: background-color .3s ease;
+}
+.orders-container .orders-row button:hover {
+    background-color: rgba(255, 217, 0, 0.762);
+}
+.orders-container .orders-row .orders-card {
+    padding: 0 !important;
+    margin-top: 20px;
+}
+.orders-container .orders-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    width: 18rem;
+}
+.orders-card img {
+    min-height: 190px;
+    max-height: 190px;
+}
+/* Cart Icon */
+.shopping-cart {
+    color: whitesmoke;
+    font-size: 22px;
+    margin-left: 35px;
+    cursor: pointer;
+}
+/* cart-container */
+#cart-container {
+    background-color: #212529;
+    position: absolute;
+    top: 56px;
+    right: -300px;
+    color: white;
+    /* padding: 20px 10px 0 40px; */
+    height: 600px;
+    opacity: 0;
+    transition: .3s linear;
+    width: 19rem;
+}
+#cart-container.show {
+    right: 0;
+    opacity: 1;
+    transition: .3s linear;
+}
+.productContainer h3 {
+    font-size: 16px !important;
+}
+.productContainer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+
+}
+.productContainer button  {
+    background-color: #ffcd39;
+    border: none;
+    border-radius: 8px;
+    padding: 0px 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+.productContainer button:hover {
+    background-color: #ffce39da;
+}
