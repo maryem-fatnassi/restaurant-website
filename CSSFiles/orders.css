@@ -63,6 +63,7 @@ nav {
     right: 0;
     opacity: 1;
     transition: .3s linear;
+    top: 115px;
 }
 .productContainer h3 {
     font-size: 16px !important;
